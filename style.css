@@ -87,7 +87,7 @@ section {
     color: black;
 }
 
-award-preview{
+.award-preview{
     position: fixed;
     bottom: 15px;
     right: 15px;

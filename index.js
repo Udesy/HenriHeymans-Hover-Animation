@@ -1,13 +1,13 @@
-import {awards} from "./data.js";
+import { awards } from "./data.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const lenis = new lenis({
+    const lenis = new Lenis({
         autoRaf: true,
     });
 
-    const awardsList = document.querySelector('awards-list')
-    const awardPreview = document.querySelector('award-previews')
+    const awardsList = document.querySelector('.awards-list')
+    const awardPreview = document.querySelector('.award-preview')
 
     const POSITIONS = {
         BOTTOM: 0,
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const awardElement = document.querySelectorAll(".award");
 
     const animatePreview = () => {
-        const awardsListReact = awardsList.getBoundClientRect();
+        const awardsListReact = awardsList.getBoundingClientRect();
         if(
             lastMousePosition.x < awardsListReact.left ||
             lastMousePosition.x > awardsListReact.right ||
